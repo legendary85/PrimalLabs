@@ -159,3 +159,10 @@ h1{
   height: 100%;
   overflow: hidden;
 }
+.benefits{
+  margin-bottom: .5rem;
+}
+#list {
+  padding-top: 0;
+  padding-left: 1.2rem;
+}
