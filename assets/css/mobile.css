@@ -1,6 +1,75 @@
 /* Smartphones */
 @media (max-width: 500px) {
-  #card-header h5{
-    font-size: 2rem;
+
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50% */
   }
+  .phone{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .notice h1 {
+    font-size: 1.5rem;
+  }
+
+  #card-header h5{
+    font-size: 1.6rem;
+  }
+
+  #card-header p{
+    font-size: 1.2rem;
+  }
+
+  .bottle-price {
+    font-size: 1.2rem
+  }
+
+  .bottle-price .shipping{
+    font-size: 1rem
+  }
+  /* warranty */
+
+  .sixty-day{
+    text-align: center;
+  }
+
+  .money-back{
+    text-align: center;
+  }
+  #money-back {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+  }
+  .card-text {
+    font-size: .7rem
+  }
+
+  /* special */
+  #special-promo h5{
+    font-size: 1.3rem;
+  }
+  #special-promo .card-text{
+    font-size: .7rem;
+  }
+
+  #special-promo .stock-up p{
+    font-size: .9rem;
+  }
+  #special-promo .savings{
+    font-size: 1rem;
+  }
+  #special-promo .detail{
+    font-size: .8rem;
+  }
+
+  #text-info {
+    font-size: .7rem;
+  }
+  
   }
