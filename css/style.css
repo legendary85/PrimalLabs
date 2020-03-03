@@ -1,3 +1,5 @@
+
+/* Color variables for easy changes */
 :root {
   --red-color: #BF0628;
   --blue-color: #173386;
@@ -56,12 +58,14 @@
 }
 
 #card-header h5{
-  font-size: 34px;
+  padding-top: 5px;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
 #card-header p{
   font-size: 28px;
+  padding-bottom: 5px;
 }
 #bottle-card {
   border-radius: 0;
@@ -91,21 +95,21 @@
 /* Warranty */
 
 #money-back {
-  width: 100px;
+  width: 140px;
   /* margin-top: .4rem; */
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
-.money-back{
-  font-size: 14px;
-}
 
 .sixty-day{
   color: var(--blue-color);
-  font-size: 46px;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 0;
   /* margin-top: .5rem; */
+}
+.money-back{
+  font-size: 14px;
 }
 
 #red-bottom{
@@ -123,6 +127,7 @@ border: transparent;
   background: var(--pink-color);
   border-top: 3px solid var(--red-color);
   border-bottom: 3px solid var(--red-color);
+
 }
 #special-promo{
   text-align: center;
@@ -131,22 +136,22 @@ border: transparent;
 }
 
 #special-promo h5{
-  font-size: 36px;
+  font-size: 1.8rem;
   color: var(--blue-color)
 }
 #special-promo p{
-  font-size: 28px;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 #special-promo span{
   color: var(--red-color)
 }
 #special-promo .card-text {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: normal;
 }
 #special-promo .detail {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .stock-up p{
