@@ -7,386 +7,226 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 
+
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <title>Primal Labs</title>
 </head>
 
 <body>
-  <header>
-    <div class="navbar navbar-dark bg-white shadow-sm">
+  <nav>
+    <div class="navbar navbar-dark bg-white">
       <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <img src="/assets/logo.svg" alt="Kiwi standing on oval">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
-          viewBox="0 0 24 24" focusable="false">
-          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-          <circle cx="12" cy="13" r="4" /></svg> -->
+          <img src="/assets/logo.svg" class='logo' alt="Kiwi standing on oval">
         </a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-        aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-
         <div class="phone">
           <span><i class="fas fa-phone"></i> 877-300-7849</span>
           <!-- <p>877-300-7849</p> -->
         </div>
       </div>
     </div>
-  </header>
+  </nav>
 
+  <div class="container-fluid" id='wood'>
+    <div class=" py-5">
+      <div class="container" id="background">
 
+        <div class="container">
+          <div class="alert">
+            <h1>Wait...Your Order is Not Complete!</h1>
+            <p>Do not hit the "Back" button as it can cause multiple charges to your card.</p>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <!-- Top Card 6 bottles -->
+                <div class="card shadow-sm" id='bottle-card'>
+                  <div class="card-body" id='card-header'>
+                    <h5 class="card-title">6 MORE BOTTLES</h5>
+                    <p class="card-text">For Just $174</p>
+                  </div>
+                  <img src="/assets/bottles.png" class="card-img-top" alt="...">
+                  <div class="bottle-price">
+                    <p>Only <span class='red-price'>$29</span> per bottle!</p>
+                    <p class="shipping">Plus Free Shipping!</p>
+                  </div>
+                  <div class="button">
+                    <img src="/assets/button.png" class="card-img-top" id="button" alt="...">
+                  </div>
+                </div>
 
+                <br>
 
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="alert">
-        <h1>Wait...Your Order is Not Complete!</h1>
-        <p>Do not hit the "Back" button as it can cause multiple charges to your card.</p>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <!-- Top Card 6 bottles -->
-            <div class="card" id='bottle-card'>
-              <div class="card-body" id='card-header'>
-                <h5 class="card-title">6 MORE BOTTLES</h5>
-                <p class="card-text">For Just $174</p>
-              </div>
-              <img src="/assets/bottles.png" class="card-img-top" alt="...">
-              <div class="bottle-price">
-                <p>Only <span class='red-price'>$29</span> per bottle!</p>
-                <p class="shipping">Plus Free Shipping!</p>
-              </div>
-              <div class="button">
-                <img src="/assets/button.png" class="card-img-top" alt="...">
-              </div>
-            </div>
+                <!-- Warranty Card -->
+                <div class="card" id="red-bottom">
+                  <div class="container" id='money-back-container'>
+                    <div class="row">
+                      <div class="col-sm-7">
+                        <div class="alignLeft">
+                          <p class='sixty-day'>60 Day</p>
+                          <p class="money-back">Money Back Guarantee!</p>
+                        </div>
+                      </div>
 
-            <br>
-
-            <!-- Warranty Card -->
-            <div class="card" id="red-bottom">
-              <div class="container" id='money-back-container'>
-                <div class="row">
-                  <div class="col-sm-7">
-                    <div class="alignLeft">
-                      <p class='sixty-day'>60 Day</p>
-                      <p class="money-back">Money Back Guarantee!</p>
+                      <div class="col-sm-3">
+                        <img src="/assets/money-back-seal.png" class="alignRight" id="money-back" alt="">
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-sm-3">
-                    <img src="/assets/money-back-seal.png" class="alignRight" id="money-back" alt="">
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-body">
-
-                <p class="card-text"><strong>DuOmega 3&7</strong> comes with a 60 Day, 100%
-                  Money Back Fuarantee. That means if you change your mind about this decision
-                  at any point in the next two months - all you need to do is email us, and we'll
-                  refund your purchase. Plus, you don't need to return the bottles.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-8">
-
-            <div class="card special-deal">
-              <div class="card-body">
-                <h5 class="card-title">A Special Deal for New Customers Only!</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <div class="button">
-                  <img src="/assets/button.png" class="card-img-top" alt="...">
-                </div>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-
-            <!-- Text Area -->
-            <div class="card">
-              <div class="card-body">
-                <h6>Dear Friend...</h6>
-                <p>A lot of people have asked how much <strong>DuOmega 3&7</strong> they should order for best
-                  results...</p>
-                <p>The medical experts at Harvard give us a major clue: <strong>The longer you take Omega-7, the
-                    better.</strong></p>
-                <p>For example, after a landmark 14-year study of 3,736 adults to determine the value of Omega-7 in
-                  their blood, doctors made a startling discovery:</p>
-                <p>High levels of Omega-7 was strongly linked to five major long-life benefits:
-                  <ol id="list">
-                    <li>Healthy chelesterol</li>
-                    <li>Healthy triglycerides</li>
-                    <li>Healthy total-to-HDL chelesterol ratio</li>
-                    <li>Lower CRP inflamation</li>
-                    <li>Lower insulin resistance</li>
-                  </ol>
-                </p>
-
-                <p>This is why, because of the amount of <strong>DuOmega 3&7</strong> you just ordered...</p>
-                <p>That's just $29 a bottle, or just $0.32 per softgel. It's also a total savings of $155.94 off normal
-                  retail price.</p>
-                <p>Plus we'll also cover the added shipping for FREE.</p>
-                <p>Remember, since <strong>DuOmega 3&7</strong> is the MOST COMPLETE fish oil on earth, it needs a
-                  longer lead time to produce...due to its proprietary processing methods. And this is why Primal Labs
-                  has run out of a supply of <strong>DuOmega 3&7</strong> before </p>
-                <p>Yet by stocking up now, you'll not only lock in the lowest price per bottle, but you'll make sure to
-                  get your supply before all the bottles are gone.</p>
-                <p>Take advantage of this exclusive one-time offer now by clicking the yellow button below. this is the
-                  only time you'll see this offer, and it's covered by our 60 Day, 100% Money Back Guarantee. So you
-                  have nothing to lose.</p>
-
-                <div class="card  mb-3">
                   <div class="card-body">
 
-                    <img src="/assets/bottles.png" class="card-img-top" alt="...">
-
-                    <div class="button">
-                      <img src="/assets/button.png" class="card-img-top" alt="...">
-                    </div>
-                    <img src="/assets/money-back-seal.png" class="alignRight" id="money-back" alt="">
+                    <p class="card-text"><strong>DuOmega 3&7</strong> comes with a 60 Day, 100%
+                      Money Back Fuarantee. That means if you change your mind about this decision
+                      at any point in the next two months - all you need to do is email us, and we'll
+                      refund your purchase. Plus, you don't need to return the bottles.
+                    </p>
                   </div>
                 </div>
-                <p><strong>DuOmega 3&7</strong> comes with a 60 Day, 100% Money Back Guarantee. That means if you change
-                  your mind about this decision at any point in the next two months - all you need to do is email us,
+              </div>
+              <div class="col-sm-8">
+
+                <div class="card special-deal">
+                  <div class="card-body" id="special-promo">
+                    <h5 class="card-title">A Special Deal for New Customers Only!</h5>
+                    <p>Stock Up On DuOmega 3&7 Now</p>
+                    <p>For Just <span>$29 Per Bottle</span></p>
+
+                    <div class="button">
+                      <img src="/assets/button.png" class="card-img-top" id="button" alt="...">
+                    </div>
+                    <div>
+
+                    </div>
+                    <p class="card-text">This is the absolute lowest price you'll ever see for DuOmega 3&7... It
+                      protects
+                      you from future price increases as well as out of stocks...</p>
+                    <p class="savings"><strong> Savings:<span>$155.94 OFF RETAIL</span></strong></p>
+                    <p class="detail">Keep reading for all of the details.</p>
+
+                  </div>
+                </div>
+
+                <!-- Text Area -->
+                <div class="card" id='card-friend'>
+                  <div class="card-body" id="text-info">
+                    <h6>Dear Friend...</h6>
+                    <p>A lot of people have asked how much <strong>DuOmega 3&7</strong> they should order for best
+                      results...</p>
+                    <p>The medical experts at Harvard give us a major clue: <strong>The longer you take Omega-7, the
+                        better.</strong></p>
+                    <p>For example, after a landmark 14-year study of 3,736 adults to determine the value of Omega-7 in
+                      their blood, doctors made a startling discovery:</p>
+                    <p>High levels of Omega-7 was strongly linked to five major long-life benefits:
+                      <ol id="list">
+                        <li>Healthy chelesterol</li>
+                        <li>Healthy triglycerides</li>
+                        <li>Healthy total-to-HDL chelesterol ratio</li>
+                        <li>Lower CRP inflamation</li>
+                        <li>Lower insulin resistance</li>
+                      </ol>
+                    </p>
+
+                    <p>This is why, because of the amount of <strong>DuOmega 3&7</strong> you just ordered...</p>
+                    <p>That's just $29 a bottle, or just $0.32 per softgel. It's also a total savings of $155.94 off
+                      normal
+                      retail price.</p>
+                    <p>Plus we'll also cover the added shipping for FREE.</p>
+                    <p>Remember, since <strong>DuOmega 3&7</strong> is the MOST COMPLETE fish oil on earth, it needs a
+                      longer lead time to produce...due to its proprietary processing methods. And this is why Primal
+                      Labs
+                      has run out of a supply of <strong>DuOmega 3&7</strong> before </p>
+                    <p>Yet by stocking up now, you'll not only lock in the lowest price per bottle, but you'll make sure
+                      to
+                      get your supply before all the bottles are gone.</p>
+                    <p>Take advantage of this exclusive one-time offer now by clicking the yellow button below. this is
+                      the
+                      only time you'll see this offer, and it's covered by our 60 Day, 100% Money Back Guarantee. So you
+                      have nothing to lose.</p>
+
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-8">
+                          <!-- Top Card 6 bottles -->
+                          <div class="card" id='card-bottles'>
+                            <img src="/assets/bottles.png" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-10">
+
+                          <div class="card" id='card-button'>
+                            <!-- <input type="image" src="/assets/button.png" alt="Submit"> -->
+                            <img src="/assets/button.png" id="button" class="card-img-top" alt="...">
+                          </div>
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Seal -->
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-4">
+                      </div>
+                      <div class="col-sm-4">
+
+                        <div class="card" id='card-seal'>
+                          <img src="/assets/money-back-seal.png" class="card-img-top" alt="...">
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <p><strong>DuOmega 3&7</strong> comes with a 60 Day, 100% Money Back Guarantee. That means if you
+                  change
+                  your mind about this decision at any point in the next two months - all you need to do is email
+                  us,
                   we'll refund your purchase. Plus, you don't need to return the bottles.</p>
 
                 <p>If I don't love my experience with <strong>DuOmega 3&7</strong>, I pay NOTHING!</p>
-                <P>My decision to invest in <strong>DuOmega 3&7</strong> is completely risk free. If I change my mind I
-                  just call or email customer service and get a full refund. I dont't even have to return the bottles,
+                <P>My decision to invest in <strong>DuOmega 3&7</strong> is completely risk free. If I change my
+                  mind I
+                  just call or email customer service and get a full refund. I dont't even have to return the
+                  bottles,
                   they are mine to keep.</P>
 
                 <p>No hassels. No risks. Just results. All guaranteed for a full 2 months.</p>
-                <a href="#" target="_blank"><strong>NO Thanks</strong>. I understand that this is my only opportunity to
+                <a href="#" target="_blank"><strong>NO Thanks</strong>. I understand that this is my only
+                  opportunity to
                   get access to this special offer, and I'm okay with midding out. Instead, if I'm blown away by my
                   experience with <strong>DuOmega 3&7</strong>, like so many thousands of folks before me, I'll just
-                  re-order at the standard retail price per bottle in the future. I'll pass on this chance forever.</a>
+                  re-order at the standard retail price per bottle in the future. I'll pass on this chance
+                  forever.</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-
-
-
-
-
-
-
-
-    <!-- <div class="py-5 bg-light">
-      <div class="container"> -->
-
-    <!-- <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-    <!-- </div>
-    </div> -->
-
-    </main>
 </body>
 
 </html>

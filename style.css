@@ -27,7 +27,7 @@ h1{
 }
 
 #card-header h5{
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
 }
 
@@ -90,9 +90,72 @@ h1{
   background: var(--pink-color);
   border-top: 3px solid var(--red-color);
   border-bottom: 3px solid var(--red-color);
+  
 }
  #list { display: block; list-style-type: decimal !important; list-style-position: inside;padding:10px; }
 
  a{
    text-decoration: underline !important;
  }
+
+#text-info{
+  padding:0;
+  padding-top: 1.5rem;
+}
+
+#card-friend,
+#card-bottles,
+#card-button,
+#card-seal{
+  border: none;
+  background: transparent;
+}
+
+#button:hover{
+  cursor: pointer;
+}
+
+.logo {
+  width: 250px;
+}
+
+#special-promo{
+  text-align: center;
+}
+
+#special-promo h5{
+  font-size: 36px;
+  color: var(--blue-color)
+}
+#special-promo p{
+  font-size: 28px;
+  font-weight: 500;
+}
+#special-promo span{
+  color: var(--red-color)
+}
+#special-promo .card-text {
+  font-size: 18px;
+  font-weight: normal;
+}
+#special-promo .detail {
+  font-size: 18px;
+  font-weight: 500;
+}
+.savings{
+  font-weight: 700;
+}
+#background{
+  background: #fff;
+  padding-bottom: 1.5rem;
+  -webkit-box-shadow: 1px 1px 13px -5px #000000; 
+  box-shadow: 1px 1px 13px -5px #000000;
+}
+
+#wood{
+  /* background-color: purple; */
+  background: url(/assets/wood-bg.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
