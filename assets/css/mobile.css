@@ -73,3 +73,19 @@
   }
   
   }
+
+  @media (max-width: 768px) {
+    .sixty-day{
+      text-align: center;
+    }
+  
+    .money-back{
+      text-align: center;
+    }
+    #money-back {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%
+    }
+  }
