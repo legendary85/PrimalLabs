@@ -7,16 +7,29 @@
 }
 
 
+#wood{
+    font-family: 'Roboto', sans-serif;
+
+    background: url(/assets/wood-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+              }
+
+
 .alert{
   text-align: center;
 }
 h1{
-  color: var(--red-color)
+  color: var(--red-color);
+  
+  
 }
 
 /* top card - left side */
 .red-price{
-  color: var(--red-color)
+  color: var(--red-color);
+  /* font-family: 'Roboto',serif; */
 }
 
 #card-header{
@@ -24,6 +37,8 @@ h1{
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 0;
+  border: transparent;
 }
 
 #card-header h5{
@@ -55,13 +70,11 @@ h1{
   padding: 0 1rem;
 }
 
-/* #money-back-container{
-  display: inline-block;
-} */
+
 
 #money-back {
   width: 100px;
-  margin-top: .4rem;
+  /* margin-top: .4rem; */
   margin-left: 1rem;
 }
 
@@ -74,12 +87,16 @@ h1{
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 0;
-  margin-top: .5rem;
+  /* margin-top: .5rem; */
 }
 
 #red-bottom{
   border-bottom: 3px solid var(--red-color);
   border-radius: 0;
+}
+#red-bottom .card-header{
+background: transparent;
+border: transparent;
 }
 
 #bottle-card {
@@ -121,6 +138,8 @@ h1{
 
 #special-promo{
   text-align: center;
+  border-radius: 0;
+  
 }
 
 #special-promo h5{
@@ -140,29 +159,32 @@ h1{
 }
 #special-promo .detail {
   font-size: 18px;
-  font-weight: 500;
 }
+
+.stock-up p{
+  margin-bottom: 0;
+}
+
 .savings{
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 700;
+  margin-bottom: 0;
 }
 #background{
   background: #fff;
   padding-bottom: 1.5rem;
-  -webkit-box-shadow: 1px 1px 13px -5px #000000; 
-  box-shadow: 1px 1px 13px -5px #000000;
+  /* -webkit-box-shadow: 1px 1px 13px -5px #000000; 
+  box-shadow: 1px 1px 13px -5px #000000; */
 }
 
-#wood{
-  /* background-color: purple; */
-  background: url(/assets/wood-bg.jpg) no-repeat center center;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
 .benefits{
   margin-bottom: .5rem;
 }
 #list {
   padding-top: 0;
   padding-left: 1.2rem;
+}
+
+.card{
+  border: none;
 }

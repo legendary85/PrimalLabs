@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Style Reset -->
+  <link rel="stylesheet" href="reset.css">
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-
-
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Stylesheet for custom styling -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
   <title>Primal Labs</title>
 </head>
 
@@ -33,7 +35,7 @@
 
   <div class="container-fluid" id='wood'>
     <div class=" py-5">
-      <div class="container" id="background">
+      <div class="container shadow" id="background">
 
         <div class="container">
           <div class="alert">
@@ -42,44 +44,46 @@
           </div>
           <div class="container">
             <div class="row">
+              <!-- Left side of site -->
               <div class="col-sm-4">
                 <!-- Top Card 6 bottles -->
-                <div class="card shadow-sm" id='bottle-card'>
-                  <div class="card-body" id='card-header'>
+
+                <div class="card mb-3 shadow" id='bottle-card'>
+                  <div class="card-header" id="card-header">
                     <h5 class="card-title">6 MORE BOTTLES</h5>
                     <p class="card-text">For Just $174</p>
                   </div>
-                  <img src="/assets/bottles.png" class="card-img-top" alt="...">
-                  <div class="bottle-price">
-                    <p>Only <span class='red-price'>$29</span> per bottle!</p>
-                    <p class="shipping">Plus Free Shipping!</p>
-                  </div>
-                  <div class="button">
-                    <img src="/assets/button.png" class="card-img-top" id="button" alt="...">
+                  <div class="card-body">
+                    <img src="/assets/bottles.png" class="card-img-top" alt="...">
+                    <div class="bottle-price">
+                      <p>Only <span class='red-price'>$29</span> per bottle!</p>
+                      <p class="shipping">Plus Free Shipping!</p>
+                    </div>
+                    <div class="button">
+                      <img src="/assets/button.png" class="card-img-top" id="button" alt="...">
+                    </div>
                   </div>
                 </div>
 
-                <br>
-
                 <!-- Warranty Card -->
-                <div class="card" id="red-bottom">
-                  <div class="container" id='money-back-container'>
+                <div class="card mb-3 shadow" id="red-bottom">
+                  <div class="card-header">
                     <div class="row">
                       <div class="col-sm-7">
                         <div class="alignLeft">
                           <p class='sixty-day'>60 Day</p>
-                          <p class="money-back">Money Back Guarantee!</p>
+                          <p class="money-back">
+                            <strong>Money Back Guarantee!</strong>
+                          </p>
                         </div>
                       </div>
-
+                      <!-- Money back seal -->
                       <div class="col-sm-3">
                         <img src="/assets/money-back-seal.png" class="alignRight" id="money-back" alt="">
                       </div>
                     </div>
                   </div>
-
                   <div class="card-body">
-
                     <p class="card-text"><strong>DuOmega 3&7</strong> comes with a 60 Day, 100%
                       Money Back Fuarantee. That means if you change your mind about this decision
                       at any point in the next two months - all you need to do is email us, and we'll
@@ -88,13 +92,18 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-8">
 
-                <div class="card special-deal">
+
+              <!-- Right Side of Site -->
+              <div class="col-sm-8">
+                <!-- Special Deal for New Customers Only! -->
+                <div class="card no-border special-deal shadow">
                   <div class="card-body" id="special-promo">
                     <h5 class="card-title">A Special Deal for New Customers Only!</h5>
-                    <p>Stock Up On DuOmega 3&7 Now</p>
-                    <p>For Just <span>$29 Per Bottle</span></p>
+                    <div class="stock-up">
+                      <p>Stock Up On DuOmega 3&7 Now</p>
+                      <p>For Just <span>$29 Per Bottle</span></p>
+                    </div>
 
                     <div class="button">
                       <img src="/assets/button.png" class="card-img-top" id="button" alt="...">
@@ -105,13 +114,13 @@
                     <p class="card-text">This is the absolute lowest price you'll ever see for DuOmega 3&7... It
                       protects
                       you from future price increases as well as out of stocks...</p>
-                    <p class="savings"><strong> Savings:<span>$155.94 OFF RETAIL</span></strong></p>
+                    <p class="savings"><strong> Savings:<span> $155.94 OFF RETAIL</span></strong></p>
                     <p class="detail">Keep reading for all of the details.</p>
 
                   </div>
                 </div>
 
-                <!-- Text Area -->
+                <!-- Message to customer -->
                 <div class="card" id='card-friend'>
                   <div class="card-body" id="text-info">
                     <h6><strong>Dear Friend...</strong> </h6>
@@ -147,13 +156,12 @@
                       only time you'll see this offer, and it's covered by our 60 Day, 100% Money Back Guarantee. So you
                       have nothing to lose.</p>
 
-
+                    <!-- Products -->
                     <div class="container">
                       <div class="row">
                         <div class="col-sm-2">
                         </div>
                         <div class="col-sm-8">
-                          <!-- Top Card 6 bottles -->
                           <div class="card" id='card-bottles'>
                             <img src="/assets/bottles.png" class="card-img-top" alt="...">
                           </div>
@@ -162,15 +170,14 @@
                         </div>
                       </div>
                     </div>
+
                     <!-- Button -->
                     <div class="container">
                       <div class="row">
                         <div class="col-sm-1">
                         </div>
                         <div class="col-sm-10">
-
                           <div class="card" id='card-button'>
-                            <!-- <input type="image" src="/assets/button.png" alt="Submit"> -->
                             <img src="/assets/button.png" id="button" class="card-img-top" alt="...">
                           </div>
                         </div>
@@ -180,13 +187,12 @@
                     </div>
                   </div>
 
-                  <!-- Seal -->
+                  <!-- Money Back seal and Info -->
                   <div class="container">
                     <div class="row">
                       <div class="col-sm-4">
                       </div>
                       <div class="col-sm-4">
-
                         <div class="card" id='card-seal'>
                           <img src="/assets/money-back-seal.png" class="card-img-top" alt="...">
                         </div>
