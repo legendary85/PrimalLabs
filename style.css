@@ -1,18 +1,26 @@
+:root {
+  --red-color: #BF0628;
+  --blue-color: #173386;
+  --pink-color: #FBEEE9;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
+
 
 .alert{
   text-align: center;
 }
 h1{
-  color: #b50219
+  color: var(--red-color)
 }
 
 /* top card - left side */
 .red-price{
-  color: #b50219
+  color: var(--red-color)
 }
 
 #card-header{
-  background-color: #b50219;
+  background: var(--red-color);
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -62,7 +70,7 @@ h1{
 }
 
 .sixty-day{
-  color: #062e65;
+  color: var(--blue-color);
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 0;
@@ -70,10 +78,21 @@ h1{
 }
 
 #red-bottom{
-  border-bottom: 3px solid #b50219;
+  border-bottom: 3px solid var(--red-color);
   border-radius: 0;
 }
 
 #bottle-card {
   border-radius: 0;
 }
+
+.special-deal .card-body{
+  background: var(--pink-color);
+  border-top: 3px solid var(--red-color);
+  border-bottom: 3px solid var(--red-color);
+}
+ #list { display: block; list-style-type: decimal !important; list-style-position: inside;padding:10px; }
+
+ a{
+   text-decoration: underline !important;
+ }
