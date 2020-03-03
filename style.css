@@ -2,11 +2,16 @@
   --red-color: #BF0628;
   --blue-color: #173386;
   --pink-color: #FBEEE9;
-  --dark-color: #333;
+  --hyperlink-color: #0000EE;
   --max-width: 1100px;
 }
 
+/* Navnbar Logo */
+.logo {
+  width: 250px;
+}
 
+/* Wood Background */
 #wood{
     font-family: 'Roboto', sans-serif;
 
@@ -14,22 +19,31 @@
     background-size: cover;
     height: 100%;
     overflow: hidden;
-              }
-
-
-.alert{
-  text-align: center;
 }
-h1{
+
+/* White Container Background */
+#background{
+  background: #fff;
+  padding-bottom: 1.5rem;
+}
+
+/* Notice  */
+.notice {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem
+}
+.notice h1{
   color: var(--red-color);
-  
-  
 }
 
-/* top card - left side */
+/* Remove Card Borders */
+.card{
+  border: none;
+}
+
+/* Top card - left side */
 .red-price{
   color: var(--red-color);
-  /* font-family: 'Roboto',serif; */
 }
 
 #card-header{
@@ -48,6 +62,9 @@ h1{
 
 #card-header p{
   font-size: 28px;
+}
+#bottle-card {
+  border-radius: 0;
 }
 
 .bottle-price{
@@ -71,6 +88,7 @@ h1{
 }
 
 
+/* Warranty */
 
 #money-back {
   width: 100px;
@@ -99,43 +117,13 @@ background: transparent;
 border: transparent;
 }
 
-#bottle-card {
-  border-radius: 0;
-}
 
+/* Right Side Special Deal */
 .special-deal .card-body{
   background: var(--pink-color);
   border-top: 3px solid var(--red-color);
   border-bottom: 3px solid var(--red-color);
-  
 }
- #list { display: block; list-style-type: decimal !important; list-style-position: inside;padding:10px; }
-
- a{
-   text-decoration: underline !important;
- }
-
-#text-info{
-  padding:0;
-  padding-top: 1.5rem;
-}
-
-#card-friend,
-#card-bottles,
-#card-button,
-#card-seal{
-  border: none;
-  background: transparent;
-}
-
-#button:hover{
-  cursor: pointer;
-}
-
-.logo {
-  width: 250px;
-}
-
 #special-promo{
   text-align: center;
   border-radius: 0;
@@ -170,21 +158,39 @@ border: transparent;
   font-weight: 700;
   margin-bottom: 0;
 }
-#background{
-  background: #fff;
-  padding-bottom: 1.5rem;
-  /* -webkit-box-shadow: 1px 1px 13px -5px #000000; 
-  box-shadow: 1px 1px 13px -5px #000000; */
-}
 
+
+/* Message to Customer */
 .benefits{
   margin-bottom: .5rem;
 }
-#list {
-  padding-top: 0;
-  padding-left: 1.2rem;
+#list { display: block; list-style-type: decimal !important; list-style-position: inside;padding:10px;
+padding-top: 0;
+padding-left: 1.2rem; 
 }
 
-.card{
-  border: none;
+#text-info{
+  padding:0;
+  padding-top: 1.5rem;
 }
+
+/* card-images */
+#card-friend,
+#card-bottles,
+#card-button,
+#card-seal{
+  border: none;
+  background: transparent;
+}
+
+/* Button Hover */
+#button:hover{
+  cursor: pointer;
+}
+
+/* Hyperlink Text */
+a{
+  color: var(--hyperlink-color);
+  text-decoration: underline !important;
+}
+
