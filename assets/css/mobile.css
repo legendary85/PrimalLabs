@@ -1,0 +1,6 @@
+/* Smartphones */
+@media (max-width: 500px) {
+  #card-header h5{
+    font-size: 2rem;
+  }
+  }
