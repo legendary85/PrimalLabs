@@ -1,4 +1,18 @@
+.red-price{
+  color: #b50219
+}
 
+#card-header{
+  background-color: #b50219;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+#card-header h5{
+  font-size: 36px;
+}
 
-
+#card-header p{
+  font-size: 28px;
+}
