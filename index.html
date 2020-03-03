@@ -44,38 +44,78 @@
 
   <div class="py-5 bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body" id='card-header'>
-
-              <h5 class="card-title">6 MORE BOTTLES</h5>
-              <p class="card-text">For Just $174</p>
+      <div class="alert">
+        <h1>Wait...Your Order is Not Complete!</h1>
+        <p>Do not hit the "Back" button as it can cause multiple charges to your card.</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <!-- Top Card 6 bottles -->
+            <div class="card" id='bottle-card'>
+              <div class="card-body" id='card-header'>
+                <h5 class="card-title">6 MORE BOTTLES</h5>
+                <p class="card-text">For Just $174</p>
+              </div>
+              <img src="/assets/bottles.png" class="card-img-top" alt="...">
+              <div class="bottle-price">
+                <p>Only <span class='red-price'>$29</span> per bottle!</p>
+                <p class="shipping">Plus Free Shipping!</p>
+              </div>
+              <div class="button">
+                <img src="/assets/button.png" class="card-img-top" alt="...">
+              </div>
             </div>
 
-            <img src="/assets/bottles.png" class="card-img-top" alt="...">
-            <p>Only <span class='red-price'>$29</span> per bottle!</p>
-            <p>Plus Free Shipping</p>
-            <img src="/assets/button.png" class="card-img-top" alt="...">
-          </div>
+            <br>
 
-          <div class="card">
+            <!-- Warranty Card -->
+            <div class="card" id="red-bottom">
+              <div class="container" id='money-back-container'>
+                <div class="row">
+                  <div class="col-sm-7">
+                    <div class="alignLeft">
+                      <p class='sixty-day'>60 Day</p>
+                      <p class="money-back">Money Back Guarantee!</p>
+                    </div>
+                  </div>
 
-            <p>60 DAY</p>
-            <p>Money Back Guarantee!</p>
-            <img src="/assets/money-back-seal.png" class="card-img-top" alt="...">
-            <div class="card-body">
+                  <div class="col-sm-3">
+                    <img src="/assets/money-back-seal.png" class="alignRight" id="money-back" alt="">
+                  </div>
+                </div>
+              </div>
 
-              <p class="card-text"><strong>DuOmega 3&7</strong> comes with a 60 Day, 100%
-                Money Back Fuarantee. That means if you change your mind about this decision
-                at any point in the next two months - all you need to do is email us, and we'll
-                refund your purchase. Plus, you don't need to return the bottles.
-              </p>
+              <div class="card-body">
+
+                <p class="card-text"><strong>DuOmega 3&7</strong> comes with a 60 Day, 100%
+                  Money Back Fuarantee. That means if you change your mind about this decision
+                  at any point in the next two months - all you need to do is email us, and we'll
+                  refund your purchase. Plus, you don't need to return the bottles.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-8">
-          <h1>Right Side</h1>
+          <div class="col-sm-8">
+            <!-- <div class="w3-container">
+              <h2>Card Example</h2>
+
+              <div class="w3-card-4" style="width:70%">
+                <header class="w3-container w3-light-grey">
+                  <h3>John Doe</h3>
+                </header>
+                <div class="w3-container">
+                  <p>1 new friend request</p>
+                  <hr>
+                  <img src="/assets//money-back-seal.png" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+                    style="width:60px">
+                  <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+                </div>
+                <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+              </div>
+            </div> -->
+
+          </div>
         </div>
       </div>
     </div>

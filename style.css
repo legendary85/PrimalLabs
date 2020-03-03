@@ -1,3 +1,12 @@
+
+.alert{
+  text-align: center;
+}
+h1{
+  color: #b50219
+}
+
+/* top card - left side */
 .red-price{
   color: #b50219
 }
@@ -11,8 +20,60 @@
 
 #card-header h5{
   font-size: 36px;
+  font-weight: 700;
 }
 
 #card-header p{
   font-size: 28px;
+}
+
+.bottle-price{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0px;
+}
+.bottle-price p{
+  margin-bottom: 0;
+}
+.bottle-price .shipping{
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px; 
+}
+
+.button {
+  padding: 0 1rem;
+}
+
+/* #money-back-container{
+  display: inline-block;
+} */
+
+#money-back {
+  width: 100px;
+  margin-top: .4rem;
+  margin-left: 1rem;
+}
+
+.money-back{
+  font-size: 14px;
+}
+
+.sixty-day{
+  color: #062e65;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: .5rem;
+}
+
+#red-bottom{
+  border-bottom: 3px solid #b50219;
+  border-radius: 0;
+}
+
+#bottle-card {
+  border-radius: 0;
 }
