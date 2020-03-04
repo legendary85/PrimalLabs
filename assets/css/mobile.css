@@ -88,6 +88,47 @@
       margin-right: auto;
       width: 50%
     }
+    .card-text {
+      font-size: .7rem
+    }
+
+    #card-header h5{
+      font-size: 1.6rem;
+    }
+  
+    #card-header p{
+      font-size: 1.2rem;
+    }
+  
+    .bottle-price {
+      font-size: 1.2rem
+    }
+  
+    .bottle-price .shipping{
+      font-size: 1rem
+    }
+  
+    /* special */
+    #special-promo h5{
+      font-size: 1.3rem;
+    }
+    #special-promo .card-text{
+      font-size: .7rem;
+    }
+  
+    #special-promo .stock-up p{
+      font-size: .9rem;
+    }
+    #special-promo .savings{
+      font-size: 1rem;
+    }
+    #special-promo .detail{
+      font-size: .8rem;
+    }
+  
+    #text-info {
+      font-size: .7rem;
+    }
   }
 
   @media (max-height: 768px) {
@@ -110,5 +151,7 @@
       width: 100%;
       
     }
+
+ 
 
   }
