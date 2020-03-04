@@ -89,3 +89,26 @@
       width: 50%
     }
   }
+
+  @media (max-height: 768px) {
+   
+    .sixty-day{
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 2.5rem;
+    }
+  
+    .money-back{
+      text-align: center;
+    }
+    #money-back {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      
+    }
+
+  }
